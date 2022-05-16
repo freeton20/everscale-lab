@@ -1,4 +1,5 @@
 pragma ton-solidity >=0.59.4;
+pragma AbiHeader expire;
 
 contract Game {
 	function getR() public view returns (uint8[]) {

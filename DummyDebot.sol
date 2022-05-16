@@ -13,7 +13,7 @@ contract DummyDebot is Debot {
 	function start() public override {
 		address gameAddress1 = address.makeAddrStd(
 			0,
-			0x4a9b1cb6675be88c8639d40813b43fd7debafac0c3bc9d0414486d851401da94
+			0xe21ff1d477fb0fd84108d1f3c1af3bbe37c0972b4352d966c74cb7186d881e4c
 		);
 		IGame(gameAddress1).getR{
 			time: 0,
