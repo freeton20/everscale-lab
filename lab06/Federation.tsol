@@ -1,0 +1,16 @@
+pragma ever-solidity >=0.67.0;
+
+struct Player {
+    string name;
+    uint8 score;    
+}
+uint8 constant MIN_QALIFICATION_SCORE = 10;
+
+function updateRating(Player p){}
+
+using Federation for Player global;   
+library Federation{
+    function showPlayerScore(Player p) internal returns (uint8){
+        return p.score;
+    }
+}

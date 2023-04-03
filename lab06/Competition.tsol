@@ -1,0 +1,11 @@
+pragma ton-solidity >=0.67.0;
+import "./Federation.tsol";
+
+contract Competition {
+	function checkPlayer(Player p) public {
+		uint8 score = p.showPlayerScore();
+		if (score > MIN_QALIFICATION_SCORE) {
+			updateRating(p);
+		}       
+	}
+}
